@@ -1,0 +1,38 @@
+1. Man brukar ibland vilja utskilja fyra olika "nivåer" när det gäller programmering. Vilk?
+
+Man brukar säg att det är Maskinnivå eller binär kod, Assemblernivå, Högnivåspråk vilket är det som vi oftst skriver så som Python, Java eller C++, och till sit är det Algoritmnivå altså hur man löser problem  logik och struktur
+
+2. vad menas med källkod
+
+Det är den koden so mvi skriver i våra editoer så som gd skriptm, java, python eller C++. Alltså Högnivåspråk
+
+3. Vad kallas översättning fån källkod till maskinkod när det gäller högnivåspråk?
+
+det kallas för kompilering
+
+4 För vissa programmeringspråk görs ingen översättning till maskinkod, utan man har ett särskilt program som styrt av källkoden utför instrutionerna.
+
+    a) Vad kallas ett sådant programeringsspråk?
+    ett sådant programringsspårk kallas för ett tolkad språk
+
+    b) vad kallas det program som utför instrutionerna?
+    det kallas för en tolk
+5. vad är en kompilatör?
+
+det är ett program som översäter högnivåspråk till maskinkod
+
+6. vidöversättning av ett program fån källkod till maskinkod skapas ofta ett mellansteg med så kallad objektkod. Vad brukar man då kalla det sista steget däe maskinkod skapas från objektkoden?
+
+det brukar kallas för länkning
+
+7. Vad brukar mna kalla det program däe man skriver in källkoden till ett program?¨
+
+det drukar kals för en editoer så som visuel studio code, notepad++ eller pycharm
+
+8. vad är en IDLE?
+
+det är en interaktiv utvecklingsmiljö för python
+
+9. Vad betyder RAD?
+
+det betyder Rapid Application Development retare saget snabb utveckling

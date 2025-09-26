@@ -1,0 +1,48 @@
+kontrollfrågor till kapitel 2
+
+1. Vilka aritmetiska operatorer känner du till i Python
+
+ja känner til + - / *
+
+2. Vilka av följande är otillåtna variabelnamn i Python
+
+okej: a3, tal5, Pi, Kalle, ettLångtVariabelnamn
+inteokej: 53, pris per liter, rabatt%
+
+
+3. Vad är felet i följand Pythonkommando:
+fel = namne = input("Ange förnamn:)"
+rätt = namne = input("Ange förnamn:")
+
+4. Vad är fel med följande kommando?
+fel alder =int(input(print(`Ange din ålder:´)))
+Rätt alder = int(input(print("Ange din ålder:")))
+
+5. Anta att du har variabeln pris och vill skriva ut dess värde med två decimaler. Hur formaterar du den utskriften.
+
+jag skul formaterara den så här om du bar vill läag till två decimaler som 0.00 så had jag gort så här print(f"{pris:.2f}")
+och om du vill ha 4 desimale had jag gort så här print(f"{pris:.4f}"). Så om pris är = 23.656599653 så får du ut 23.6565
+
+6. vad blir utskriften i vart och ett av följande fall? Tänk efter i förväg och försök lista ut vad det kommer att blir
+
+a. print("nej\nu\ngår det för långt\n") blir 
+
+nej
+u
+går det för långt
+
+b.print("hejsan\rhopp\n") blir 
+
+hoppan
+
+c,print("Nää\b ") blir
+
+Nä 
+
+d.print("Mån\tTis\tOns\tFre") blir
+
+Mån     Tis     Ons     Fre
+
+
+
+
