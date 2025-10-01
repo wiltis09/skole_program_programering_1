@@ -1,7 +1,7 @@
 
 import random
 
-Kassör_name_lista = ["Raad", "Wilton", "Mario", "Zelda", "link", "bob", "Harry Poter", "Nicolina"]
+Kassör_name_lista = ["Raad", "Wilton", "Mario", "Zelda", "link", "bob", "Astrid", "Harry Poter", "Nicolina"]
 PUMP_name_lista = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 Bensin_typ_name_lista = ["Bensin", "El", "Disel"]
 
