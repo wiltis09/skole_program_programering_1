@@ -1,12 +1,12 @@
 
 import random
 
-Kassör_name_lista = ["Raad", "Wilton", "Mario", "Zelda", "link", "bob", "Astrid", "Harry Poter", "Nicolina"]
-PUMP_name_lista = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-Bensin_typ_name_lista = ["Bensin", "El", "Disel"]
-
+kassör_name_lista = ["Raad", "Wilton", "Mario", "Zelda", "link", "bob", "Astrid", "Harry Poter", "Nicolina"]
+pump_name_lista = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+bensin_typ_name_lista = ["Bensin", "El", "Disel"]
+bensin_typ_Pris_name_lista = ["Pris/liter", "Pris/kWh"]
 # Lista över bensinbilar
-Bensinbil_typ_name_lista = [
+bensinbil_typ_name_lista = [
     "Ferrari 488",
     "Ferrari F8",
     "Ferrari Roma",
@@ -15,7 +15,7 @@ Bensinbil_typ_name_lista = [
 ]
 
 # Lista över elbilar
-Elbil_typ_name_lista = [
+elbil_typ_name_lista = [
     "Tesla: Model 3",
     "Tesla: Model Y",
     "Tesla: Model S",
@@ -26,7 +26,7 @@ Elbil_typ_name_lista = [
 ]
 
 # Lista över dieselbilar
-Dieselbil_typ_name_lista = [
+dieselbil_typ_name_lista = [
     "Volkswagen Golf",
     "Volkswagen Passat",
     "Volkswagen Tiguan",
@@ -49,18 +49,22 @@ payment_methods_name_lista = ["Visa", "MasterCard", "American Express", "Apple P
 
 
 payment_methods_name = "(" + random.choice(payment_methods_name_lista) + ")"
-PUMP_name = random.choice(PUMP_name_lista)
-Kassör_name = random.choice(Kassör_name_lista)
-Bensin_typ_name = random.choice(Bensin_typ_name_lista)
+PUMP_name = random.choice(pump_name_lista)
+Kassör_name = random.choice(kassör_name_lista)
+Bensin_typ_name = random.choice(bensin_typ_name_lista)
 Card_nummber = random.randrange(1000, 9999)
 Ref_nummber = random.randrange(10000000, 99999999)
 car_typ_name = ""
+bensin_typ_Pris_name = ""
 if Bensin_typ_name == "Bensin":
-    car_typ_name = random.choice(Bensinbil_typ_name_lista)
+    car_typ_name = random.choice(bensinbil_typ_name_lista)
+    bensin_typ_Pris_name = bensin_typ_Pris_name_lista[0]
 elif Bensin_typ_name == "El":
-    car_typ_name = random.choice(Elbil_typ_name_lista)
+    car_typ_name = random.choice(elbil_typ_name_lista)
+    bensin_typ_Pris_name = bensin_typ_Pris_name_lista[1]
 elif Bensin_typ_name == "Disel":
-    car_typ_name = random.choice(Dieselbil_typ_name_lista)
+    car_typ_name = random.choice(dieselbil_typ_name_lista)
+    bensin_typ_Pris_name = bensin_typ_Pris_name_lista[0]
 PUMP_name_med_nolla = "0" + PUMP_name
 PUMP_name_med_med_titel = "PUMP-" + PUMP_name
 
@@ -90,7 +94,7 @@ print("Pump: ", PUMP_name_med_nolla, "     Terminal: ", PUMP_name_med_med_titel,
 print("------------------------------------------------------------------------------") 
 print("Artikel: ", Bensin_typ_name) 
 print("  Volym: ", input_Volym,"L") 
-print("  Pris/liter: ", input_Pris_per_liter, "kr") 
+print(bensin_typ_Pris_name, input_Pris_per_liter, "kr") 
 print("  Bil: ", car_typ_name) 
 print("  Belopp ...... ", (input_Volym * input_Pris_per_liter), "kr") 
 print("------------------------------------------------------------------------------") 

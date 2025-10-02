@@ -1,5 +1,8 @@
 print("Input two numbers:")
 
+
+bodidii = int(print(input("1")))
+
 def input_number(prompt):
     while True:
         try:
