@@ -77,7 +77,7 @@ def input_number(prompt):
         except:
             print("Please enter a valid integer.")
 
-input_Volym = input_number("hur mycket har du tankad din " + car_typ_name + " (i liter): ")
+input_Volym = input_number("How much did you fill your tank with? " + car_typ_name + " (i liter): ")
 input_Pris_per_liter = input_number("vad är Pris/liter för " + Bensin_typ_name + " i kronor: ")
 
 
@@ -90,7 +90,7 @@ print("                          Macken \"Full Tank\"")
 print("                Vi fyller dig – inte bara bilen!") 
 print("------------------------------------------------------------------------------") 
 print("Datum: 26-09-2025   Tid: 21:37") 
-print("Pump: ", PUMP_name_med_nolla, "     Terminal: ", PUMP_name_med_med_titel, "      Kassör: ", Kassör_name) 
+print("Pump: ", , "     Terminal: ", PUMP_name_med_med_titel, "      Kassör: ", Kassör_name) 
 print("------------------------------------------------------------------------------") 
 print("Artikel: ", Bensin_typ_name) 
 print("  Volym: ", input_Volym,"L") 
