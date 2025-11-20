@@ -6,13 +6,10 @@ def draw_line(plus = False, num = 10, plus_num = 0):
     line = ""
     for i in range(1, num):
         if plus:
-            line = (str(line) + str(i * plus_num) + " ")
+            print(str("%4d"%(i * plus_num)), end=" ")
         else:   
-            line = (str(line) + str(i) + " ")
-    if not (line.__sizeof__() - 41) == 26:
-        print(line.__sizeof__() - 41)
-        for i in range(1, (26 - (line.__sizeof__() - 41))):
-            line = line + " "
+            print((str(line) + str(i)), end=" ")
+    print()
     print(line)
 draw_line(False, 10, 0)
 draw_line(True, 10, 2)
@@ -23,3 +20,5 @@ draw_line(True, 10, 7)
 draw_line(True, 10, 8)
 draw_line(True, 10, 9)
   
+
+    
