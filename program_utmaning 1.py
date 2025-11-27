@@ -1,63 +1,24 @@
 
-import random
-import textwrap
+import turtle
+
+screen = turtle.Screen()
+screen.title("Programmeringsutmaning 1")
+screen.bgcolor("white")
+turtle.speed(200)
+colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "brown", "gray", "cyan", "magenta", "lime", "navy", "teal", "maroon", "olive", "silver", "gold", "coral", "indigo", "violet", "turquoise"]
+def drew_square(max_size=100, move_speed=200, size_step=10):
+    turtle.speed(move_speed)
+    for size in range(0, max_size, size_step):
+        turtle.pencolor(colors[size%6])
+        for angel in range(0, 360, 45):
+            turtle.right(angel)
+            for i in range(4):
+                turtle.forward(size)
+                turtle.right(90)
+drew_square(100, 500, 50)
 
 
 
-def input_number(prompt):
-    while True:
-        try:
-            value = int(input(prompt))
-            return value 
-        except:
-            print("Please enter a valid integer.")
-            
-dagar = [
-    "mondag",       # BMI < 18.5
-    "tristag",      # BMI 18.5 – 24.9
-    "onsaga",        # BMI 25 – 29.9
-    "torstag",     
-    "fredag",
-    "lördag",
-    "söndag",
-]
 
 
-
-print(" ")
-print(" ")
-print("==== BMI CALCULATOR ====")
-print(" ")
-
-acktiviterer_mondag = []
-acktiviterer_tristag = []
-acktiviterer_onsaga = []
-acktiviterer_torstag = []
-acktiviterer_fredag = []
-acktiviterer_lördag = []
-acktiviterer_söndag = []
-
-def ask_for_day_events():
-    for i in dagar:
-        prompt = str("hur många acriviteter har du på " + i + ":")
-        aktivtet_mänged= input_number(prompt)
-        for j in range(aktivtet_mänged):
-            aktivitet = input("Skriv in aktiviteten: ")
-            if i == "mondag":
-                acktiviterer_mondag.append(aktivitet)
-            elif i == "tristag":
-                acktiviterer_tristag.append(aktivitet)
-            elif i == "onsaga":
-                acktiviterer_onsaga.append(aktivitet)
-            elif i == "torstag":
-                acktiviterer_torstag.append(aktivitet)
-            elif i == "fredag":
-                acktiviterer_fredag.append(aktivitet)
-            elif i == "lördag":
-                acktiviterer_lördag.append(aktivitet)
-            elif i == "söndag":
-                acktiviterer_söndag.append(aktivitet)
-print(str(acktiviterer_mondag))
-ask_for_day_events()
-
-
+turtle.done()
