@@ -2,13 +2,15 @@ from turtle import*
 from time import*
 import random
 
-def fly(x,y):
+roll =[26,3,35,12,28,7,29,18,22,9,31,14,20,1,33,16,24,5,10,23,8,30,11,36,13,27,6,34,17,25,2,21,4,19,15,32,0]
+
+def flytta_penna(x,y):
     pu()
     goto(x,y)
     pd()
     return()
 
-def Ram (x,y,r):
+def rita_ring(x,y,r):
     pu()
     goto(0,y+r+5)
     pd()
@@ -17,7 +19,7 @@ def Ram (x,y,r):
     circle(r)
     return
 
-def Kvad():
+def rita_ruta():
     pensize(5)
     color("gold","white")
     pu()
@@ -32,8 +34,8 @@ def Kvad():
     pu()
     return()
 
-def Tur():
-    Kvad()
+def snurra_hjulet():
+    rita_ruta()
     pu()
     goto(0,0)
     pd()
@@ -61,13 +63,13 @@ def Tur():
             
     
     pu()
-    Kvad()
+    rita_ruta()
     goto(0,0)
     pd()
     color("black")
     write(roll[t], font=('Courier',50, 'bold'), align='center')
     
-def Ram2(x,y,r,d):
+def rita_flerfärgad_ring(x,y,r,d):
     setheading(180)
     pu()
     goto(x,y+r+5)
@@ -88,7 +90,7 @@ def Ram2(x,y,r,d):
         return()
         
 
-def Delar(x,y,r,d):
+def skriv_nummer_pa_hjulet(x,y,r,d):
     setheading(180)
     global roll
     pu()
@@ -106,9 +108,9 @@ def Delar(x,y,r,d):
         write(roll[i+1], font=style, align='center')
         #write(d-1-i)
 
-def P(x,y):
+def klick_hanterare(x,y):
     if x < -180 and x> -340 :
-        Tur()
+        snurra_hjulet()
     if x < 330 and x > 180:
         clear()
         quit()
@@ -122,28 +124,28 @@ tracer(25)
 goto(0,5)
 dot(460,"chocolate")
 
-roll =[26,3,35,12,28,7,29,18,22,9,31,14,20,1,33,16,24,5,10,23,8,30,11,36,13,27,6,34,17,25,2,21,4,19,15,32,0]
+
 
 for i in range (105,190,2):
-    Ram2(0,0,i,37)
+    rita_flerfärgad_ring(0,0,i,37)
 for i in (230,195,140,102):
-    Ram(0,0,i)
+    rita_ring(0,0,i)
   
 done()
-"""
-Delar(0,0,165,37)
-fly(260,-150)
+
+skriv_nummer_pa_hjulet(0,0,165,37)
+flytta_penna(260,-150)
 dot(80,"red")
 color("black")
 style = ('Courier', 12, 'bold')
 write("Slut", font=style, align='center')
-fly(-260,-150)
+flytta_penna(-260,-150)
 dot(80,"green")
 color("black")
 style = ('Courier', 12, 'bold')
 write("Nästa", font=style, align='center')
-Tur()
+snurra_hjulet()
 
-onscreenclick(P)
+onscreenclick(klick_hanterare)
 done()
-"""
+
